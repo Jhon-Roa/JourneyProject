@@ -37,3 +37,6 @@
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/WebApi/obj/Debug/net8.0/WebApi.pdb
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/WebApi/obj/Debug/net8.0/WebApi.genruntimeconfig.cache
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/WebApi/obj/Debug/net8.0/ref/WebApi.dll
+/home/jhonsito/Documents/dotnet-projects/JourneyProject/WebApi/bin/Debug/net8.0/MediatR.dll
+/home/jhonsito/Documents/dotnet-projects/JourneyProject/WebApi/bin/Debug/net8.0/MediatR.Contracts.dll
+/home/jhonsito/Documents/dotnet-projects/JourneyProject/WebApi/obj/Debug/net8.0/WebApi.sourcelink.json

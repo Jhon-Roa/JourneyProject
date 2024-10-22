@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "rXI5asu6qZjhqBm4tjBpc1Rfvc0hRrUPbqTXvOBvWvsHMTtBgcdYh33ba4YT1WUBqkDcOX1b7CjUD7cpIdW2mg==",
+  "dgSpecHash": "XdsKPpWYTX587G40llcDXhqEzryqxmAKIlBmvfEtA1RyO4NU4nr9Axxk3S0gbHulLRweQr+wbz1iVMln2Jthcw==",
   "success": true,
   "projectFilePath": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Infrastructure/Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/jhonsito/.nuget/packages/mediatr/12.4.0/mediatr.12.4.0.nupkg.sha512",
+    "/home/jhonsito/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/home/jhonsito/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

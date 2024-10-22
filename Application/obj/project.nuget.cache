@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "xxrY6BG7AH7Ebxjjs96/pXXN1n4zLwduJgilqtYANVjUZS1oqO3uQ907nc9ij2x1zYdufmWcEdVP6eIf7ycjeQ==",
+  "dgSpecHash": "YCgA9XmN36EDtIL5pzJ/KuPk2orhrbY3gtoE1m50YbMBLVcc+9Ik+8mf+tEJlcUixsEBwSHOSPo8WjXEaViGjw==",
   "success": true,
   "projectFilePath": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/jhonsito/.nuget/packages/mediatr/12.4.0/mediatr.12.4.0.nupkg.sha512",
+    "/home/jhonsito/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/home/jhonsito/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
