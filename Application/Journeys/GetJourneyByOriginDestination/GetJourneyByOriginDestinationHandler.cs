@@ -1,27 +1,25 @@
-using Application.Data;
 using Application.Journeys.Common;
+using Domain.Journeys; 
+using Domain.Primitives;
 using ErrorOr;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
 namespace Application.Journeys.GetJourneyByOriginDestination;
 
-public class GetJourneyByOriginDestinationHandler : IRequestHandler<GetJourneyByOriginDestination, ErrorOr<List<JourneyResponse>>>
+internal sealed class GetJourneyByOriginDestinationHandler : IRequestHandler<GetJourneyByOriginDestination, ErrorOr<List<JourneyResponse>>>
 {
-    private readonly IApplicationDbContext _dbContext;
+    private readonly IJourneyRepository _journeyRepository;
+    private readonly IUnitOfWork _unitOfWork;
 
-    public GetJourneyByOriginDestinationHandler(IApplicationDbContext dbContext)
+    public GetJourneyByOriginDestinationHandler(IJourneyRepository journeyRepository, IUnitOfWork unitOfWork)
     {
-        _dbContext = dbContext;
+        _journeyRepository = journeyRepository ?? throw new ArgumentNullException(nameof(journeyRepository));
+        _unitOfWork = unitOfWork ?? throw new ArgumentNullException(nameof(unitOfWork));
     }
 
     public async Task<ErrorOr<List<JourneyResponse>>> Handle(GetJourneyByOriginDestination request, CancellationToken cancellationToken)
     {
-        var journeys = await _dbContext.Journeys
-            .Where(j => j.Origin == request.Origin && j.Destination == request.Destination)
-            .Include(j => j.JourneyFlights)
-                .ThenInclude(jf => jf.Flight)
-            .ToListAsync(cancellationToken);
+        var journeys = await _journeyRepository.GetByOriginDestinationAsync(request.Origin, request.Destination);
 
         if (!journeys.Any())
         {
@@ -36,8 +34,8 @@ public class GetJourneyByOriginDestinationHandler : IRequestHandler<GetJourneyBy
             Flights: j.JourneyFlights.Select(jf => jf.Flight)
                                       .Where(f => f != null)
                                       .ToList()
-        )).ToList(); 
+        )).ToList();
 
-        return journeyResponses; 
+        return journeyResponses;
     }
 }

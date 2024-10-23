@@ -5,7 +5,6 @@ namespace Domain.Flights;
 
 public class Flight
 {
-    // Propiedades públicas para el mapeo
     public FlightId Id { get; private set; }
     public Transport Transport { get; private set; }
     public string Origin { get; private set; } = string.Empty;
@@ -18,7 +17,7 @@ public class Flight
 
     public Flight(FlightId id, Transport transport, string origin, string destination, double price)
     {
-        Id = id;
+        Id = id;    
         Transport = transport;
         Origin = origin;
         Destination = destination;

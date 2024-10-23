@@ -26,7 +26,7 @@ internal sealed class CreateFlightCommandHandler : IRequestHandler<CreateFlightC
 
         Flight flight = new(
             new FlightId(Guid.NewGuid()),
-            command.Transport,
+            transport,
             command.Origin,
             command.Destination,
             command.Price

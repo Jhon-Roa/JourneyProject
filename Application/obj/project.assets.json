@@ -792,11 +792,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/jhonsito/Documents/practicingExercises/JourneyProject/Application/Application.csproj",
+      "projectUniqueName": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/Application.csproj",
       "projectName": "Application",
-      "projectPath": "/home/jhonsito/Documents/practicingExercises/JourneyProject/Application/Application.csproj",
+      "projectPath": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/Application.csproj",
       "packagesPath": "/home/jhonsito/.nuget/packages/",
-      "outputPath": "/home/jhonsito/Documents/practicingExercises/JourneyProject/Application/obj/",
+      "outputPath": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/jhonsito/.nuget/NuGet/NuGet.Config"
@@ -811,8 +811,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/jhonsito/Documents/practicingExercises/JourneyProject/Domain/Domain.csproj": {
-              "projectPath": "/home/jhonsito/Documents/practicingExercises/JourneyProject/Domain/Domain.csproj"
+            "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Domain/Domain.csproj": {
+              "projectPath": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Domain/Domain.csproj"
             }
           }
         }

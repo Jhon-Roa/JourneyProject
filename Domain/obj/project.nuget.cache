@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DETzZNBfSgPiwDhfZNuved7X9+XwSwUSP77giBR30w/fEp6vWVs9+/pvq5bN2EKGaLXu1OgoqTn2AFb4dhx+wg==",
+  "dgSpecHash": "U8btLR/R1d8ixtoO4DhI2Lx8kGjk7ycQVUIL4QiYly4ITPYt07Gh62zqYF8DIalcIX9K3jnjz0JHqvdcULLdNw==",
   "success": true,
-  "projectFilePath": "/home/jhonsito/Documents/practicingExercises/JourneyProject/Domain/Domain.csproj",
+  "projectFilePath": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Domain/Domain.csproj",
   "expectedPackageFiles": [
     "/home/jhonsito/.nuget/packages/erroror/2.0.1/erroror.2.0.1.nupkg.sha512",
     "/home/jhonsito/.nuget/packages/mediatr/12.4.0/mediatr.12.4.0.nupkg.sha512",

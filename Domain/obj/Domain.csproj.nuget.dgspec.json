@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/jhonsito/Documents/practicingExercises/JourneyProject/Domain/Domain.csproj": {}
+    "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Domain/Domain.csproj": {}
   },
   "projects": {
-    "/home/jhonsito/Documents/practicingExercises/JourneyProject/Domain/Domain.csproj": {
+    "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jhonsito/Documents/practicingExercises/JourneyProject/Domain/Domain.csproj",
+        "projectUniqueName": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/jhonsito/Documents/practicingExercises/JourneyProject/Domain/Domain.csproj",
+        "projectPath": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Domain/Domain.csproj",
         "packagesPath": "/home/jhonsito/.nuget/packages/",
-        "outputPath": "/home/jhonsito/Documents/practicingExercises/JourneyProject/Domain/obj/",
+        "outputPath": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/jhonsito/.nuget/NuGet/NuGet.Config"

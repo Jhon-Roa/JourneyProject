@@ -5,6 +5,7 @@
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/WebApi/bin/Debug/net8.0/WebApi.runtimeconfig.json
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/WebApi/bin/Debug/net8.0/WebApi.dll
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/WebApi/bin/Debug/net8.0/WebApi.pdb
+/home/jhonsito/Documents/dotnet-projects/JourneyProject/WebApi/bin/Debug/net8.0/ErrorOr.dll
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/WebApi/bin/Debug/net8.0/FluentValidation.dll
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/WebApi/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/WebApi/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll

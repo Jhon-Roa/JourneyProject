@@ -1,5 +1,3 @@
-using FluentValidation;
-
 namespace WebApi;
 
 public static class DependencyInjection
