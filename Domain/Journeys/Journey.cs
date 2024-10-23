@@ -5,6 +5,15 @@ namespace Domain.Journeys;
 
 public sealed class Journey : AggregateRoot 
 {
+    public Journey(JourneyId id, string origin, string destination, double price)
+    {
+        Id = id;
+        Origin = origin;
+        Destination = destination;
+        SetPrice(price);    
+    }
+
+    private Journey() { }
     public JourneyId Id { get; private set; }
     public string Origin { get; private set; } = string.Empty;
     public string Destination { get; private set; } = string.Empty;
@@ -12,17 +21,6 @@ public sealed class Journey : AggregateRoot
     private readonly List<Flight> _flights = [];
 
     public IReadOnlyCollection<Flight> Flights => _flights.AsReadOnly();
-
-    public Journey(JourneyId id, string origin, string destination, double price, List<Flight> flights)
-    {
-        Id = id;
-        Origin = origin;
-        Destination = destination;
-        SetPrice(price);
-        AddFlights(flights);
-    }
-
-    public Journey() { }
 
     public void SetPrice(double price)
     {

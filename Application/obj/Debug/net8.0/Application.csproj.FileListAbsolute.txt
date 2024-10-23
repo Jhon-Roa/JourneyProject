@@ -8,9 +8,9 @@
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/obj/Debug/net8.0/Application.AssemblyInfoInputs.cache
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/obj/Debug/net8.0/Application.AssemblyInfo.cs
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/obj/Debug/net8.0/Application.csproj.CoreCompileInputs.cache
+/home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/obj/Debug/net8.0/Application.sourcelink.json
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/obj/Debug/net8.0/Application.csproj.CopyComplete
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/obj/Debug/net8.0/Application.dll
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/obj/Debug/net8.0/refint/Application.dll
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/obj/Debug/net8.0/Application.pdb
 /home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/obj/Debug/net8.0/ref/Application.dll
-/home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/obj/Debug/net8.0/Application.sourcelink.json
