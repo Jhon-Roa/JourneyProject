@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9FxlzL8YyWHJUI2C7v+DEPAIYTeVUHZsV2Me0zIjc9UCesTTueDkcqS1pJ7Z291ZaU4XNKRi4zgEQpC7nvp1Jg==",
+  "dgSpecHash": "Dd+USOokcbp+Cj0M2u5hMOnEl95G4MerezBYRW03mrofIpv+0nNR61Qc0M+0ZolpJJVH/X8fkzHJU72O4fvE8A==",
   "success": true,
-  "projectFilePath": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/Application.csproj",
+  "projectFilePath": "/home/jhonsito/Documents/practicingExercises/JourneyProject/Application/Application.csproj",
   "expectedPackageFiles": [
     "/home/jhonsito/.nuget/packages/erroror/2.0.1/erroror.2.0.1.nupkg.sha512",
     "/home/jhonsito/.nuget/packages/fluentvalidation/11.10.0/fluentvalidation.11.10.0.nupkg.sha512",

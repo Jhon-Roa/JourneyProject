@@ -966,11 +966,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Infrastructure/Infrastructure.csproj",
+      "projectUniqueName": "/home/jhonsito/Documents/practicingExercises/JourneyProject/Infrastructure/Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Infrastructure/Infrastructure.csproj",
+      "projectPath": "/home/jhonsito/Documents/practicingExercises/JourneyProject/Infrastructure/Infrastructure.csproj",
       "packagesPath": "/home/jhonsito/.nuget/packages/",
-      "outputPath": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Infrastructure/obj/",
+      "outputPath": "/home/jhonsito/Documents/practicingExercises/JourneyProject/Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/jhonsito/.nuget/NuGet/NuGet.Config"
@@ -985,11 +985,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/Application.csproj": {
-              "projectPath": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Application/Application.csproj"
+            "/home/jhonsito/Documents/practicingExercises/JourneyProject/Application/Application.csproj": {
+              "projectPath": "/home/jhonsito/Documents/practicingExercises/JourneyProject/Application/Application.csproj"
             },
-            "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Domain/Domain.csproj": {
-              "projectPath": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Domain/Domain.csproj"
+            "/home/jhonsito/Documents/practicingExercises/JourneyProject/Domain/Domain.csproj": {
+              "projectPath": "/home/jhonsito/Documents/practicingExercises/JourneyProject/Domain/Domain.csproj"
             }
           }
         }

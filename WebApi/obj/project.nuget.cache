@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nEn8cTPLJerVXeEZWXoIiR2Z8hUS7gHZOC6DM+86/HURqOF/BN471kUARTSsm868RQwP5/XZ2WwKIyDilN6Zqg==",
+  "dgSpecHash": "7XClKGDoZH5mMa4+7rhlh39U6MIsi7n2pQij76qmbpR4Rflqbo801z15oRkr1Tjj/XyIGVo9qcgseKTIv1bX8A==",
   "success": true,
-  "projectFilePath": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/WebApi/WebApi.csproj",
+  "projectFilePath": "/home/jhonsito/Documents/practicingExercises/JourneyProject/WebApi/WebApi.csproj",
   "expectedPackageFiles": [
     "/home/jhonsito/.nuget/packages/erroror/2.0.1/erroror.2.0.1.nupkg.sha512",
     "/home/jhonsito/.nuget/packages/fluentvalidation/11.10.0/fluentvalidation.11.10.0.nupkg.sha512",
