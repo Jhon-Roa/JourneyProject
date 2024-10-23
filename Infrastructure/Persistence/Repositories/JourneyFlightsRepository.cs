@@ -1,6 +1,7 @@
 using Domain.Flights;
 using Domain.Journeys;
 using Domain.JourneysFlights;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Persistence.Repositories;
 
@@ -15,11 +16,18 @@ public class JourneyFlightsRepository : IJourneyFlightRepository
 
     public void Add(JourneyFlight journeyFlight)
     {
-        throw new NotImplementedException();
+        _context.JourneyFlights.Add(journeyFlight);
     }
+    public async Task<List<Flight?>> GetFlightsByJourneyId(JourneyId journeyId)
+{
+    var journeyFlights = await _context.JourneyFlights
+        .Where(jf => jf.JourneyId == journeyId)
+        .Include(jf => jf.Flight)
+        .ToListAsync();
 
-    public Task<List<Flight>> GetFlightsByJourneyId(JourneyId journeyId)
-    {
-        throw new NotImplementedException();
-    }
+    return journeyFlights.Select(jf => jf.Flight)
+                         .Where(f => f != null) 
+                         .ToList();
+}
+
 }

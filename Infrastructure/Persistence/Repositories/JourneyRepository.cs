@@ -1,4 +1,5 @@
 using Domain.Journeys;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Persistence.Repositories;
 
@@ -18,9 +19,13 @@ public class JourneyRepository : IJourneyRepository
         throw new NotImplementedException();
     }
 
-    public Task<List<Journey>> GetByOriginDestinationAsync(string origin, string destination)
+    public async Task<List<Journey>> GetByOriginDestinationAsync(string origin, string destination)
     {
-        throw new NotImplementedException();
+        return await _context.Journeys
+            .Where(j => j.Origin == origin && j.Destination == destination)
+            .Include(j => j.JourneyFlights)
+                .ThenInclude(jf => jf.Flight)
+            .ToListAsync();
     }
 }
 

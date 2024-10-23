@@ -7,5 +7,5 @@ public interface IJourneyFlightRepository
 {
     void Add(JourneyFlight journeyFlight);
 
-    Task<List<Flight>> GetFlightsByJourneyId(JourneyId journeyId);
+    Task<List<Flight?>> GetFlightsByJourneyId(JourneyId journeyId);
 }

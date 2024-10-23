@@ -1,4 +1,5 @@
 using Domain.Flights;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Persistence.Repositories;
 
@@ -13,16 +14,23 @@ public class FlightRepository : IFlightRepository
 
     public void Add(Flight flight)
     {
-        throw new NotImplementedException();
+        _context.Flights.Add(flight); 
     }
 
-    public Task<Flight?> GetFlightByDestination(string destination)
+    public async Task<List<Flight>> GetAll()
     {
-        throw new NotImplementedException();
+        return await _context.Flights.ToListAsync();
     }
 
-    public Task<Flight?> GetFLightByOrigin(string origin)
+    public async Task<Flight?> GetFlightByDestination(string destination)
     {
-        throw new NotImplementedException();
+        return await _context.Flights
+            .FirstOrDefaultAsync(f => f.Destination == destination); 
+    }
+
+    public async Task<Flight?> GetFLightByOrigin(string origin)
+    {
+        return await _context.Flights
+            .FirstOrDefaultAsync(f => f.Origin == origin); 
     }
 }
