@@ -9,9 +9,9 @@ internal sealed class CreateJourneyCommandHandler : IRequestHandler<CreateJourne
     private readonly IJourneyRepository _journeyRepository;
     private readonly IUnitOfWork _iUnitOfWork;
 
-    public CreateJourneyCommandHandler(IJourneyRepository customerRepository, IUnitOfWork iUnitOfWork)
+    public CreateJourneyCommandHandler(IJourneyRepository journeyRepository, IUnitOfWork iUnitOfWork)
     {
-        _journeyRepository = customerRepository ?? throw new ArgumentNullException(nameof(customerRepository));
+        _journeyRepository = journeyRepository ?? throw new ArgumentNullException(nameof(journeyRepository));
         _iUnitOfWork = iUnitOfWork ?? throw new ArgumentNullException(nameof(iUnitOfWork));;
     }
 
@@ -21,7 +21,7 @@ internal sealed class CreateJourneyCommandHandler : IRequestHandler<CreateJourne
             new JourneyId(Guid.NewGuid()),
             command.Origin,
             command.Destination,
-            command.price
+            command.Price
         );
 
         _journeyRepository.Add(journey);

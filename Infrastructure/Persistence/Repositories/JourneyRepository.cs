@@ -1,5 +1,4 @@
 using Domain.Journeys;
-using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Persistence.Repositories;
 
@@ -19,19 +18,7 @@ public class JourneyRepository : IJourneyRepository
         throw new NotImplementedException();
     }
 
-    public Task<bool> ExistsAsync(JourneyId id)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task<List<Journey>> GetAll()
-    {
-        throw new NotImplementedException();
-    }
-
-    public async Task<Journey?> GetByIdAsync(JourneyId id) => await _context.Journeys.SingleOrDefaultAsync(journey => journey.Id == id);
-
-    public void Update(Journey journey)
+    public Task<List<Journey>> GetByOriginDestinationAsync(string origin, string destination)
     {
         throw new NotImplementedException();
     }

@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using Domain.Primitives;
 using Domain.Journeys;
 using Infrastructure.Persistence.Repositories;
+using Domain.Flights;
+using Domain.JourneysFlights;
 
 namespace Infrastructure;
 
@@ -23,6 +25,8 @@ public static class DependencyInjection
         services.AddScoped<IUnitOfWork>(scoped => scoped.GetRequiredService<IUnitOfWork>());
 
         services.AddScoped<IJourneyRepository,  JourneyRepository>();
+        services.AddScoped<IFlightRepository, FlightRepository>();
+        services.AddScoped<IJourneyFlightRepository, JourneyFlightsRepository>();
 
         return services;
     }

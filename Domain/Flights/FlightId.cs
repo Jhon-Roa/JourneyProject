@@ -1,3 +1,3 @@
 namespace Domain.Flights;
 
-public record FlightId(Guid Id);
+public record FlightId(Guid Value);

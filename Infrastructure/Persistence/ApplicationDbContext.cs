@@ -1,5 +1,7 @@
 using Application.Data;
+using Domain.Flights;
 using Domain.Journeys;
+using Domain.JourneysFlights;
 using Domain.Primitives;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -16,10 +18,15 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext, IUnitOfWor
     }
     
     public DbSet<Journey> Journeys { get; set; }
-    
+    public DbSet<Flight> Flights { get; set; }
+    public DbSet<JourneyFlight> JourneyFlights { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
+
+        modelBuilder.Entity<Flight>()
+            .OwnsOne(f => f.Transport);
     }
     
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())

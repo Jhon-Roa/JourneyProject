@@ -2,10 +2,7 @@ namespace Domain.Journeys;
 
 public interface IJourneyRepository
 {
-    Task<List<Journey>> GetAll();
-    Task<Journey?> GetByIdAsync(JourneyId id);
-    Task<bool> ExistsAsync(JourneyId id);
+    Task<List<Journey>> GetByOriginDestinationAsync(string origin, string destination);
     void Add(Journey journey);
-    void Update(Journey journey);
     void Delete(Journey journey);
 }
