@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kKeQ/0OmeGRwYVk+oyk90EYR9Vcgf/ExUYXch8ZV94eqwwnVWY7n1APR4qMV4QOq9o1eGzbyHNvbxsfyx+7lHQ==",
+  "dgSpecHash": "nEn8cTPLJerVXeEZWXoIiR2Z8hUS7gHZOC6DM+86/HURqOF/BN471kUARTSsm868RQwP5/XZ2WwKIyDilN6Zqg==",
   "success": true,
   "projectFilePath": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/WebApi/WebApi.csproj",
   "expectedPackageFiles": [
+    "/home/jhonsito/.nuget/packages/erroror/2.0.1/erroror.2.0.1.nupkg.sha512",
     "/home/jhonsito/.nuget/packages/fluentvalidation/11.10.0/fluentvalidation.11.10.0.nupkg.sha512",
     "/home/jhonsito/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "/home/jhonsito/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
