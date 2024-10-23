@@ -1,11 +1,12 @@
 using Domain.Flights;
 using Domain.Primitives;
 using Domain.ValueObjects;
+using ErrorOr;
 using MediatR;
 
 namespace Application.Flights.Create;
 
-internal sealed class CreateFlightCommandHandler : IRequestHandler<CreateFlightCommand, Unit>
+internal sealed class CreateFlightCommandHandler : IRequestHandler<CreateFlightCommand, ErrorOr<Unit>>
 {
     private readonly IFlightRepository _flightRepository;
     private readonly IUnitOfWork _iUnitOfWork;
@@ -16,11 +17,11 @@ internal sealed class CreateFlightCommandHandler : IRequestHandler<CreateFlightC
         _iUnitOfWork = iUnitOfWork ?? throw new ArgumentNullException(nameof(iUnitOfWork));;
     }
 
-    public async Task<Unit> Handle(CreateFlightCommand command, CancellationToken cancellationToken)
+    public async Task<ErrorOr<Unit>> Handle(CreateFlightCommand command, CancellationToken cancellationToken)
     {
         if(Transport.Create(command.FlightCarrier, command.FlightNumber) is not Transport transport)
         {
-            throw new ArgumentException(nameof(Transport));
+            return Error.Validation("Flight.Transport", "Transport has no valid format");
         }
 
         Flight flight = new(

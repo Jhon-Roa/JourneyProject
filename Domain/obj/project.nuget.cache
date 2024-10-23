@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "a0SZrCeZkbs2sNyPT/jTGuAK/+ddrHxYAHb+GRYZeSD7tvPFj+qPhvakDp8ETE/bhYNbKS2T09iaKK7dDtRIvg==",
+  "dgSpecHash": "U8btLR/R1d8ixtoO4DhI2Lx8kGjk7ycQVUIL4QiYly4ITPYt07Gh62zqYF8DIalcIX9K3jnjz0JHqvdcULLdNw==",
   "success": true,
   "projectFilePath": "/home/jhonsito/Documents/dotnet-projects/JourneyProject/Domain/Domain.csproj",
   "expectedPackageFiles": [
+    "/home/jhonsito/.nuget/packages/erroror/2.0.1/erroror.2.0.1.nupkg.sha512",
     "/home/jhonsito/.nuget/packages/mediatr/12.4.0/mediatr.12.4.0.nupkg.sha512",
     "/home/jhonsito/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/home/jhonsito/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"

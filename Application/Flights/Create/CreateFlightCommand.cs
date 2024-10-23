@@ -1,4 +1,5 @@
 using Domain.ValueObjects;
+using ErrorOr;
 using MediatR;
 
 namespace Application.Flights.Create;
@@ -10,4 +11,4 @@ public record CreateFlightCommand(
     double Price,
     string FlightCarrier,
     string FlightNumber
-) : IRequest<Unit>;
+) : IRequest<ErrorOr<Unit>>;
